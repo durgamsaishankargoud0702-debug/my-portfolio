@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | D. Sai Shankar Goud</title>
+    <meta name="description" content="Projects by D. Sai Shankar Goud - Web Development and Automation.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Starfield Animation -->
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">Sai.</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="page-main reveal">
+        <div class="container">
+            <div class="page-header center-text">
+                <h1>Projects & Experiments</h1>
+                <p class="sub-header">Turning complex problems into elegant, user-centric web solutions.</p>
+            </div>
+
+            <!-- Filter Tabs -->
+            <div class="filter-container">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="web">Web Apps</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+                <button class="filter-btn" data-filter="design">UI/Design</button>
+            </div>
+
+            <!-- Featured Project -->
+            <!-- Featured Project: Resume Builder (Default) -->
+            <section class="featured-project" id="feat-resume">
+                <div class="featured-content">
+                    <span class="featured-label">Featured Project</span>
+                    <h2>Resume Builder Web App</h2>
+                    <p class="featured-desc">A professional-grade resume creation tool focusing on data privacy and ATS
+                        compliance. Features real-time editing, PDF export, and a clean, distraction-free interface.</p>
+                    <div class="tech-stack-inline">
+                        <span>Next.js</span>
+                        <span>MongoDB</span>
+                        <span>Auth.js</span>
+                        <span>Tailwind</span>
+                    </div>
+                    <div class="featured-actions">
+                        <a href="https://resume-builder-brown-chi.vercel.app/" class="btn btn-primary"
+                            target="_blank">Live Demo</a>
+                        <a href="https://github.com/durgamsaishankargoud0702-debug/resume-builder"
+                            class="btn btn-secondary" target="_blank">View Case Study</a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <img src="images/resume-builder.png" alt="Resume Builder Pro Interface" class="featured-img-file">
+                </div>
+            </section>
+
+            <!-- Featured Project: Home Store (For Web Apps Filter) -->
+            <section class="featured-project" id="feat-homestore" style="display: none;">
+                <div class="featured-content">
+                    <span class="featured-label">Featured Web App</span>
+                    <h2>Home Store Application</h2>
+                    <p class="featured-desc">A comprehensive e-commerce management system for high-volume vendors.
+                        Features include real-time inventory tracking, sales analytics dashboards, and automated
+                        workflow management for order processing.</p>
+                    <div class="tech-stack-inline">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="featured-actions">
+                        <a href="#" class="btn btn-primary">Simulate Demo</a>
+                        <a href="https://github.com/durgamsaishankargoud0702-debug/Home-store" class="btn btn-secondary"
+                            target="_blank">View Details</a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <img src="images/home-store.png" alt="Home Store Dashboard" class="featured-img-file">
+                </div>
+            </section>
+
+            <!-- Featured Project: Work & Stay Abroad (For Specific Interaction) -->
+            <section class="featured-project" id="feat-workstay" style="display: none;">
+                <div class="featured-content">
+                    <span class="featured-label">Featured Platform</span>
+                    <h2>Work & Stay Abroad</h2>
+                    <p class="featured-desc">A global platform connecting job seekers with accommodations. Features
+                        advanced search filtering, map integration, and community forums.</p>
+                    <div class="tech-stack-inline">
+                        <span>PHP</span>
+                        <span>MySQL</span>
+                        <span>Search Filter</span>
+                        <span>UI/UX</span>
+                    </div>
+                    <div class="featured-actions">
+                        <a href="#" class="btn btn-primary">Explore Platform</a>
+                        <a href="https://github.com/durgamsaishankargoud0702-debug/Work-Stay-Abroad"
+                            class="btn btn-secondary" target="_blank">Use Case</a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <img src="images/work-stay.png" alt="Work & Stay Abroad Interface" class="featured-img-file">
+                </div>
+            </section>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card" data-category="web" data-featured="feat-homestore"
+                    style="cursor: pointer;">
+                    <div class="card-status status-live">Live v1.0</div>
+                    <h3>Home Store Application</h3>
+                    <p class="desc">A comprehensive e-commerce management system for vendors. Features include admin
+                        dashboards for inventory, sales tracking, and workflow management.</p>
+                    <div class="tech-stack">PHP • MySQL • Dashboard</div>
+                    <div class="project-links">
+                        <a href="https://github.com/durgamsaishankargoud0702-debug/Home-store" target="_blank"
+                            class="btn-link">View Details</a>
+                        <a href="#">Simulate</a>
+                    </div>
+                </article>
+
+                <!-- Project 2 -->
+                <article class="project-card" data-category="web" data-featured="feat-workstay"
+                    style="cursor: pointer;">
+                    <div class="card-status status-dev">In Development</div>
+                    <h3>Work & Stay Abroad</h3>
+                    <p class="desc">A platform connecting job seekers with opportunities abroad. Includes listings for
+                        jobs, accommodation, and detailed visa guidance resources.</p>
+                    <div class="tech-stack">PHP • MySQL • Search</div>
+                    <div class="project-links">
+                        <a href="https://github.com/durgamsaishankargoud0702-debug/Work-Stay-Abroad" target="_blank"
+                            class="btn-link">View Details</a>
+                    </div>
+                </article>
+
+                <!-- Project 3 (Automation Example) -->
+                <article class="project-card" data-category="automation">
+                    <div class="card-status status-proto">Prototype</div>
+                    <h3>n8n Workflow Automation</h3>
+                    <p class="desc">Custom automated workflows for data syncing between CRM and Email marketing tools,
+                        reducing manual entry time by 90%.</p>
+                    <div class="tech-stack">n8n • Webhooks • JSON</div>
+                    <div class="project-links">
+                        <a href="#">View Diagram</a>
+                    </div>
+                </article>
+
+                <!-- Project 4 (Design) -->
+                <article class="project-card" data-category="design">
+                    <div class="card-status status-proto">Concept</div>
+                    <h3>Finance Dashboard UI</h3>
+                    <p class="desc">A clean, dark-mode specialized user interface for personal finance tracking. Focuses
+                        on data visualization and accessibility.</p>
+                    <div class="tech-stack">Figma • UI Kit • Prototyping</div>
+                    <div class="project-links">
+                        <a href="#">View Prototype</a>
+                    </div>
+                </article>
+
+                <!-- Project 5 (Design) -->
+                <article class="project-card" data-category="design">
+                    <div class="card-status status-proto">Case Study</div>
+                    <h3>Travel App Redesign</h3>
+                    <p class="desc">UX research and complete visual overhaul of a booking application to improve user
+                        flow and booking conversion rates.</p>
+                    <div class="tech-stack">Figma • User Research • Wireframing</div>
+                    <div class="project-links">
+                        <a href="#">View Design</a>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Workflow Section -->
+            <section class="workflow-section">
+                <div class="section-header">
+                    <h2>My Development Workflow</h2>
+                    <p>How I go from zero to one.</p>
+                </div>
+                <div class="workflow-steps">
+                    <div class="step">
+                        <div class="step-icon">🔍</div>
+                        <h3>Discovery</h3>
+                        <p>Understanding the core problem and user needs.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">🎨</div>
+                        <h3>Design</h3>
+                        <p>Wireframing and high-fidelity prototyping.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">💻</div>
+                        <h3>Development</h3>
+                        <p>Clean, scalable code with modern frameworks.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-icon">🚀</div>
+                        <h3>Deployment</h3>
+                        <p>Testing, optimization, and launch.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA Section -->
+            <section class="cta-section">
+                <h2>Have a Project in Mind?</h2>
+                <p>I'm always open to discussing new opportunities and ideas.</p>
+                <a href="contact.html" class="btn btn-primary">Let's Build Something</a>
+            </section>
+            <!-- Footer -->
+            <footer class="site-footer">
+                <p>© 2026 D. Sai Shankar Goud. Built with clean code & minimal design.</p>
+            </footer>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
