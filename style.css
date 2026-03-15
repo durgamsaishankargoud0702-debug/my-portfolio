@@ -1613,7 +1613,90 @@ section,
 }
 
 /* =========================================
-   15. Workflow Section (Projects Page)
+   15. Testimonials Section
+   ========================================= */
+.testimonials-section {
+    padding: 6rem 0;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background: #1e293b;
+    border-radius: 20px;
+    padding: 2.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    color: #ffffff;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: rgba(6, 182, 212, 0.3); /* Cyan highlight on hover */
+}
+
+.testimonial-content {
+    margin-bottom: 2rem;
+}
+
+.quote-icon {
+    font-size: 2rem;
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    opacity: 0.8;
+}
+
+.testimonial-content p {
+    color: #cbd5e1;
+    font-style: italic;
+    line-height: 1.8;
+    font-size: 1.05rem;
+}
+
+.testimonial-author {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1.5rem;
+}
+
+.author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #4f46e5;
+}
+
+.author-info h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.author-info span {
+    font-size: 0.85rem;
+    color: var(--text-light);
+}
+
+/* =========================================
+   16. Workflow Section (Projects Page)
    ========================================= */
 .workflow-section {
     padding: 6rem 0;
@@ -1721,7 +1804,8 @@ section,
     .projects-grid,
     .benefits-grid,
     .expertise-grid,
-    .services-grid {
+    .services-grid,
+    .testimonials-grid {
         grid-template-columns: 1fr !important;
     }
 }
