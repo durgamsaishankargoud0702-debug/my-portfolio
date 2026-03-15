@@ -789,7 +789,11 @@ section,
 
     .home-container,
     .contact-split-layout,
-    .featured-project {
+    .featured-project,
+    .projects-grid,
+    .benefits-grid,
+    .expertise-grid,
+    .services-grid {
         grid-template-columns: 1fr;
         flex-direction: column;
     }
