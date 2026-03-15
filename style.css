@@ -800,13 +800,16 @@ section,
 
     .hamburger {
         display: block;
+        z-index: 1001; /* Ensure button is always clickable above menu */
     }
 
     .nav-links {
         position: fixed;
         left: -100%;
-        top: 70px;
+        top: 0;
+        height: 100vh;
         flex-direction: column;
+        justify-content: center;
         background-color: var(--bg-main);
         width: 100%;
         text-align: center;
@@ -814,6 +817,7 @@ section,
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
         gap: 0;
         padding: 2rem 0;
+        z-index: 999;
     }
 
     .nav-links.active {

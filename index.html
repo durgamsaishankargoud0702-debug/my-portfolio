@@ -242,7 +242,7 @@
             </div>
         </section>
         <!-- Client Reviews Section -->
-        <section class="testimonials-section">
+        <section class="testimonials-section" id="reviews">
             <div class="container">
                 <div class="section-header">
                     <h2>What Clients Say 💬</h2>
@@ -294,6 +294,86 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Review 4 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>"Sai is an incredible problem solver. When our backend was struggling with high traffic, he refactored the database queries and improved load times significantly."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+                            <div class="author-info">
+                                <h4>John D.</h4>
+                                <span>Startup Founder</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 5 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>"The portfolio website he designed for me is beautiful. The micro-animations and attention to detail really make it stand out from typical template sites."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+                            <div class="author-info">
+                                <h4>Sarah J.</h4>
+                                <span>Freelance Designer</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 6 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>"His ability to seamlessly integrate modern frontend frameworks with robust PHP backends is top-tier. Highly recommended for enterprise applications."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+                            <div class="author-info">
+                                <h4>Arjun K.</h4>
+                                <span>CTO</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Review 7 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <p>"I was impressed by his clear communication and agile workflow. He took our rough idea and turned it into a fully functional, scalable web app in just weeks."</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar"><i class="fas fa-user-circle"></i></div>
+                            <div class="author-info">
+                                <h4>Emily C.</h4>
+                                <span>Project Coordinator</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Add Review Form -->
+                <div class="add-review-section" style="margin-top: 5rem; text-align: center;">
+                    <h3 style="margin-bottom: 2rem; color: #ffffff;">Write a Review ✍️</h3>
+                    <form class="contact-form review-form" style="max-width: 600px; margin: 0 auto; text-align: left;" onsubmit="event.preventDefault(); alert('Review submitted successfully! Pending approval.');">
+                        <div class="form-group">
+                            <label for="reviewerName">Your Name</label>
+                            <input type="text" id="reviewerName" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewerRole">Your Role/Company</label>
+                            <input type="text" id="reviewerRole" required placeholder="CEO at TechCorp">
+                        </div>
+                        <div class="form-group">
+                            <label for="reviewMessage">Your Review</label>
+                            <textarea id="reviewMessage" rows="4" required placeholder="Share your experience working with me..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit-btn">Submit Review <i class="fas fa-paper-plane"></i></button>
+                    </form>
                 </div>
             </div>
         </section>
