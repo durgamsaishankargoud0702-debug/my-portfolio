@@ -1715,3 +1715,13 @@ section,
         padding: 4rem 2rem;
     }
 }
+
+/* Force Mobile Grids (Fixing Order Override) */
+@media (max-width: 768px) {
+    .projects-grid,
+    .benefits-grid,
+    .expertise-grid,
+    .services-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
